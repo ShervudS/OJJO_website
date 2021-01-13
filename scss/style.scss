@@ -12,8 +12,15 @@
         display: flex;
         justify-content: flex-start;
         &--item{
-            @include adaptiv-valve(font-size, 14, 10 , 0);
             font-family: 'Gilroy';
+            font-weight: 400;
+            line-height: 150%;
+            color: #fff;
+            padding: .5rem 1em;
+            @include adaptiv-value(font-size, 14, 10 , 0);
+            & + .header__menu--item{
+                margin-left: 20px;
+            }
         }
     }
     &__logo{
@@ -22,11 +29,69 @@
             width: 100%;
         }
     }
+    &__social{
+        display: flex;
+        justify-content: flex-end;
+        &--item{
+            font-family: 'Gilroy';
+            font-weight: 400;
+            line-height: 150%;
+            color: #fff;
+            background-color: transparent;
+            padding: .5rem 1em;
+            cursor: pointer;
+            @include adaptiv-value(font-size, 14, 10 , 0);
+            & + .header__social--item{
+                margin-left: 20px;
+            }
+        }
+    }
 }
-.burger-menu{
+.burger__menu{
     display: none;
-    &.activ{
+    justify-content: flex-start;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    &--line{
         display: block;
+        height: 4px;
+        width: 20px;
+        background-color: #fff;
+        border-radius: 2px;
+        transition: all .3s ease 0s;
+        &::before{
+            display: block;
+            content: '';
+            height: 4px;
+            width: 33px;
+            border-radius: 2px;
+            background-color: #fff;
+            margin-top: -10px;
+            transition: all .3s ease 0s;
+        }
+        &::after{
+            display: block;
+            content: '';
+            height: 4px;
+            width: 33px;
+            border-radius: 2px;
+            background-color: #fff;
+            margin-top: 16px;
+            transition: all .3s ease 0s;
+        }
+        &.activ{
+            width: 0;
+            &::before{
+                margin-top: 0;
+                transform: rotateZ(45deg);
+            }
+            &::after{
+                margin-top: -4px;
+                transform: rotateZ(-45deg);
+            }
+        }   
     }
 }
 

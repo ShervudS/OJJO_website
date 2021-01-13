@@ -66,15 +66,121 @@
           justify-content: flex-start;
 }
 
+.header__menu--item {
+  font-family: 'Gilroy';
+  font-weight: 400;
+  line-height: 150%;
+  color: #fff;
+  padding: .5rem 1em;
+  font-size: calc(10px + 4 * ((100vw - 320px) / 1600));
+}
+
+.header__menu--item + .header__menu--item {
+  margin-left: 20px;
+}
+
 .header__logo--img {
   height: 100%;
   width: 100%;
 }
 
-.burger-menu {
-  display: none;
+.header__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.burger-menu.activ {
+.header__social--item {
+  font-family: 'Gilroy';
+  font-weight: 400;
+  line-height: 150%;
+  color: #fff;
+  background-color: transparent;
+  padding: .5rem 1em;
+  cursor: pointer;
+  font-size: calc(10px + 4 * ((100vw - 320px) / 1600));
+}
+
+.header__social--item + .header__social--item {
+  margin-left: 20px;
+}
+
+.burger__menu {
+  display: none;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.burger__menu--line {
   display: block;
+  height: 4px;
+  width: 20px;
+  background-color: #fff;
+  border-radius: 2px;
+  -webkit-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+}
+
+.burger__menu--line::before {
+  display: block;
+  content: '';
+  height: 4px;
+  width: 33px;
+  border-radius: 2px;
+  background-color: #fff;
+  margin-top: -10px;
+  -webkit-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+}
+
+.burger__menu--line::after {
+  display: block;
+  content: '';
+  height: 4px;
+  width: 33px;
+  border-radius: 2px;
+  background-color: #fff;
+  margin-top: 16px;
+  -webkit-transition: all .3s ease 0s;
+  transition: all .3s ease 0s;
+}
+
+.burger__menu--line.activ {
+  width: 0;
+}
+
+.burger__menu--line.activ::before {
+  margin-top: 0;
+  -webkit-transform: rotateZ(45deg);
+          transform: rotateZ(45deg);
+}
+
+.burger__menu--line.activ::after {
+  margin-top: -4px;
+  -webkit-transform: rotateZ(-45deg);
+          transform: rotateZ(-45deg);
+}
+
+@media (max-width: 860px) {
+  .header__menu {
+    display: none;
+  }
+  .header__social {
+    display: none;
+  }
+  .burger__menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }

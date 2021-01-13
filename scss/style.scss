@@ -1,0 +1,33 @@
+@import '_variables.scss', '_fonts.scss';
+.header{
+    margin-top: 25px;
+    &__container{
+        height: 52px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: $darkgray;
+    }
+    &__menu{
+        display: flex;
+        justify-content: flex-start;
+        &--item{
+            @include adaptiv-valve(font-size, 14, 10 , 0);
+            font-family: 'Gilroy';
+        }
+    }
+    &__logo{
+        &--img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+.burger-menu{
+    display: none;
+    &.activ{
+        display: block;
+    }
+}
+
+@import '_media.scss';

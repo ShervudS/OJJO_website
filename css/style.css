@@ -1,0 +1,80 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1130px;
+  padding: 0 10px;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: local("Gilroy Medium"), local("Gilroy-Medium"), url("/fonts/Gilroy-Medium.woff2") format("woff2"), url("/fonts/Gilroy-Medium.woff") format("woff"), url("/fonts/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gilroy';
+  src: local("Gilroy Regular"), local("Gilroy-Regular"), url("/fonts/Gilroy-Regular.woff2") format("woff2"), url("/fonts/Gilroy-Regular.woff") format("woff"), url("/fonts/Gilroy-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Noto';
+  src: local("Noto Serif Bold"), local("Noto-Serif-Bold"), url("/fonts/NotoSerif-Bold.woff2") format("woff2"), url("/fonts/NotoSerif-Bold.woff") format("woff"), url("/fonts/NotoSerif-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+.header {
+  margin-top: 25px;
+}
+
+.header__container {
+  height: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #333333;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.header__logo--img {
+  height: 100%;
+  width: 100%;
+}
+
+.burger-menu {
+  display: none;
+}
+
+.burger-menu.activ {
+  display: block;
+}

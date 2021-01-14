@@ -18,6 +18,11 @@
             color: #fff;
             padding: .5rem 1em;
             @include adaptiv-value(font-size, 14, 10 , 0);
+            transition: all .2s ease 0s;
+            &:hover{
+                background-color: $darkgray;
+                box-shadow: 0px 10px 15px 0px rgba(50, 50, 50, 0.8);
+            }
             & + .header__menu--item{
                 margin-left: 20px;
             }
@@ -92,6 +97,67 @@
                 transform: rotateZ(-45deg);
             }
         }   
+    }
+}
+
+// home Page
+.home{
+    margin-top: -98px;
+    height: calc(100vh + 21px);
+    width: 100%;
+    background: url('/img/bg_home.png') center / cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    &__link{
+        margin: 0 auto;
+        display: block;
+        border: 1px solid #fff;
+        background-color: $darkgray;
+        padding: .8em 2em;
+        margin-bottom: 4.4em;
+        font-family: 'Gilory';
+        font-weight: 500;
+        @include adaptiv-value(font-size, 18, 12, 0);
+        color: #fff;
+        text-transform: uppercase;
+        transition: all .2s ease 0s;
+        &:hover{
+            box-shadow: 0px 10px 15px 0px rgba(50, 50, 50, 0.8);
+            color: $darkgray;
+            background-color:#fff;
+            border: 1px solid $darkgray;
+        }
+    }
+    &__title{
+        text-align: center;
+        font-family: 'Nano';
+        font-weight: 700;
+        @include adaptiv-value(font-size, 36, 36, 0);
+        color: #fff;
+        margin-bottom: 1em;
+    }
+    &__brends{
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        border-top: 1px solid #fff;
+        &--item{
+            max-width: 160px;
+            padding: 0 15px;
+            & img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: all .2s ease 0s;
+                &:hover{
+                    transform:translateY(-5px)
+                }
+            }
+            & + .home__brends--item{
+                border-left: 1px solid #fff;
+            }
+        }
     }
 }
 

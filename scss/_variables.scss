@@ -40,6 +40,7 @@ $maxWidthContainer: 1110;
 .container{
     margin: 0 auto;
     max-width: $maxWidthContainer + 20 + px;
+    width: 100%;
     padding: 0 10px;
 }
 

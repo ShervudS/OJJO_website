@@ -15,6 +15,7 @@
 .container {
   margin: 0 auto;
   max-width: 1130px;
+  width: 100%;
   padding: 0 10px;
 }
 
@@ -261,6 +262,106 @@
 
 .home__brends--item + .home__brends--item {
   border-left: 1px solid #fff;
+}
+
+.title {
+  font-family: 'Gilroy';
+  font-weight: 400;
+  line-height: 140%;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: 'Nano';
+  font-weight: 700;
+  text-align: center;
+}
+
+.decoration {
+  padding: 6.25em 0 7.5em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.decoration__title {
+  font-size: calc(14px + 7 * ((100vw - 320px) / 1600));
+}
+
+.decoration__subtitle {
+  font-size: calc(18px + 12 * ((100vw - 320px) / 1600));
+  margin-top: .5em;
+}
+
+.decoration__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 3.75em;
+}
+
+.decoration__menu--item {
+  height: 55px;
+  width: 165px;
+  background-color: #fff;
+  border: 1px solid #D6D6D6;
+  cursor: pointer;
+  font-family: 'Gilroy';
+  font-weight: 500;
+  font-size: calc(12px + 6 * ((100vw - 320px) / 1600));
+}
+
+.decoration__card {
+  margin-top: 3.3em;
+  margin-right: -30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.decoration__card--item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 calc(33.333% - 60px);
+          flex: 1 1 calc(33.333% - 60px);
+  height: 280px;
+  background-color: #414141;
+  position: relative;
+  margin: 0 30px 30px 0;
+  -webkit-transition: all .2s ease 0s;
+  transition: all .2s ease 0s;
+}
+
+.decoration__card--item:hover {
+  -webkit-box-shadow: 0px 10px 15px 0px rgba(50, 50, 50, 0.8);
+          box-shadow: 0px 10px 15px 0px rgba(50, 50, 50, 0.8);
+}
+
+.decoration__card--img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.decoration__card--title {
+  width: 50%;
+  position: absolute;
+  bottom: 30px;
+  left: 25%;
+  font-family: 'Gilroy';
+  font-weight: 500;
+  font-size: calc(14px + 10 * ((100vw - 320px) / 1600));
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 @media (max-width: 860px) {

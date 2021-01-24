@@ -12,12 +12,59 @@
     .home__brends{
         display: none;
     }
+
+    .decoration,
+    .salons,
+    .blog,
+    .social,
+    .subscribe{
+        padding: 2em 0;
+    }
+    .footer{
+        padding-top: 2em;
+    }
 }
+
+@media(max-width: 852px) {
+    .social__cards{
+        justify-content: center;
+    }
+}
+
+@media(max-width: 763px){
+    .footer__item{
+        margin: 1em .5em 0 0;
+    }
+}
+
 @media(max-width: 720px) {
-    
+    .blog__cards{
+        justify-content: space-between;
+        &--item{
+            margin: 0 0 1em 0;
+            flex: auto;
+            max-width: 280px;
+            max-width: 300px;
+        }
+    }
 }
+
+@media(max-width: 589px) {
+    .blog__cards{
+        justify-content: center;
+    }
+}
+
+@media(max-width: 506px) {
+    .footer__item{
+        margin: 1em 0 0 0;
+    }
+}
+
 @media(max-width: 480px) {
-    
+    .decoration__card--item{
+        flex: 1 1 1;
+    }
 }
 
 @media(max-width: 320px) {

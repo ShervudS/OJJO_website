@@ -325,6 +325,7 @@
 }
 
 .decoration__card--item {
+  min-width: 250px;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 calc(33.333% - 60px);
           flex: 1 1 calc(33.333% - 60px);
@@ -449,7 +450,9 @@
           flex: 1 0 calc(33.333% - 60px);
   background-color: #333333;
   margin-right: 30px;
+  max-width: 350px;
   max-height: 370px;
+  min-height: 230px;
   position: relative;
   -webkit-transition: all .2s ease 0s;
   transition: all .2s ease 0s;
@@ -532,6 +535,13 @@
   max-height: 300px;
 }
 
+.social__cards--item img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .subscribe {
   padding: 6.5em 0 6.5em 0;
   width: 100%;
@@ -570,6 +580,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .subscribe__content form {
@@ -652,7 +664,9 @@
 }
 
 .footer__item {
-  margin: 0 1.875em 0 0;
+  margin: 1em 1.875em 0 0;
+  min-width: 165px;
+  max-width: 33.333%;
   -webkit-box-flex: 1;
       -ms-flex: 1 0 calc(25% - 90px);
           flex: 1 0 calc(25% - 90px);
@@ -711,5 +725,67 @@
   }
   .home__brends {
     display: none;
+  }
+  .decoration,
+  .salons,
+  .blog,
+  .social,
+  .subscribe {
+    padding: 2em 0;
+  }
+  .footer {
+    padding-top: 2em;
+  }
+}
+
+@media (max-width: 852px) {
+  .social__cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 763px) {
+  .footer__item {
+    margin: 1em .5em 0 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .blog__cards {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .blog__cards--item {
+    margin: 0 0 1em 0;
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+    max-width: 280px;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 589px) {
+  .blog__cards {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 506px) {
+  .footer__item {
+    margin: 1em 0 0 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .decoration__card--item {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 1;
+            flex: 1 1 1;
   }
 }

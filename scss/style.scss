@@ -215,6 +215,7 @@
         display: flex;
         flex-wrap: wrap;
         &--item{
+            min-width: 250px;
             flex: 1 1 calc(33.333% - 60px);
             height: 280px;
             background-color: #414141;
@@ -304,7 +305,9 @@
             flex: 1 0 calc(33.333% - 60px);
             background-color: $darkgray;
             margin-right: 30px;
+            max-width: 350px;
             max-height: 370px;
+            min-height: 230px;
             position: relative;
             transition: all .2s ease 0s;
             &:hover{
@@ -366,6 +369,11 @@
         flex-wrap: wrap;
         &--item{
             max-height: 300px;
+            & img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
     }
 }
@@ -393,6 +401,7 @@
         margin-top: 3.9em;
         display: flex;
         justify-content: center;
+        flex-wrap: wrap;
         & form{
             background-color: #fff;
             display: flex;
@@ -450,7 +459,9 @@
         border-bottom: 1px solid $darkgray;
     }
     &__item{
-        margin: 0 1.875em 0 0;
+        margin: 1em 1.875em 0 0;
+        min-width: 165px;
+        max-width: 33.333%;
         flex: 1 0 calc(25% - 90px);
         display: flex;
         justify-content: flex-start;

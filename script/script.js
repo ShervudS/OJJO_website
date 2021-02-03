@@ -6,10 +6,10 @@ bgMenu.addEventListener('click', () => {
    bgLine.classList.toggle('activ'); 
 });
 
-const ahref = document.querySelectorAll('a');
+// const ahref = document.querySelectorAll('a');
 
-ahref.forEach(e => {
-   e.addEventListener('click', (e) =>{
-      e.preventDefault();
-   });
-});
+// ahref.forEach(e => {
+//    e.addEventListener('click', (e) =>{
+//       e.preventDefault();
+//    });
+// });

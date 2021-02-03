@@ -1,12 +1,13 @@
 @import '_variables.scss', '_fonts.scss';
 .header{
-    margin-top: 25px;
+    // margin-top: 25px;
+    padding: 25px 0;
+    background-color: $darkgray;
     &__container{
         height: 52px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        background-color: $darkgray;
     }
     &__menu{
         display: flex;

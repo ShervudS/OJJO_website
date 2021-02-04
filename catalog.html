@@ -11,7 +11,7 @@
 <body>
 
     <!-- header -->
-    <header class="header">
+    <header class="header catalog">
         <div class="header__container container">
             <nav class="header__menu">
                 <a href="#" class="header__menu--item">Контрагентам</a>
@@ -46,34 +46,135 @@
 
     <section class="catalog">
         <div class="catalog__container container">
-            <form action="">
-                <select name="" id="">
-                    <option value="all">Бренд</option>
-                    <option value="brend">Dolce & Gabanna</option>
-                    <option value="brend">Dolce & Gabanna</option>
+            <form action="" class="filter">
+                <select name="" id="brend" class="filter__item">
+                    <option disabled>Бренд</option>
+                    <option>Dolce & Gabanna</option>
+                    <option>Dolce & Gabanna</option>
                 </select>
 
-                <select name="" id="">
-                    <option value="price">Цена</option>
+                <select name="" id="price" class="filter__item">
+                    <option disabled>Цена</option>
                 </select>
                 
-                <select name="" id="">
-                    <option value="people">Для кого</option>
+                <select name="" id="people" class="filter__item">
+                    <option disabled>Для кого</option>
                 </select>
 
-                <select name="" id="">
-                    <option value="collection">коллекция</option>
+                <select name="" id="collection" class="filter__item">
+                    <option disabled>коллекция</option>
                 </select>
 
-                <select name="" id="">
-                    <option value="season">сезон</option>
+                <select name="" id="season" class="filter__item">
+                    <option disabled>сезон</option>
                 </select>
 
-                <select name="" id="">
-                    <option value="event">событие</option>
+                <select name="" id="event" class="filter__item">
+                    <option disabled>событие</option>
                 </select>
-
             </form>
+
+            <div class="catalog__cards">
+                <div class="catalog__cards--item">
+                    <div class="cards__img">
+                        <img src="/img/catalog__img.png" alt="">
+                    </div>
+
+                    <p class="cards__title">Подвеска</p>
+                    <p class="cards__name">Dolce & Gabanna</p>
+                    <button class="cards__price">175 000 ₽</button>
+                </div>
+
+                <div class="catalog__cards--item">
+                    <div class="cards__img">
+                        <img src="/img/catalog__img.png" alt="">
+                    </div>
+
+                    <p class="cards__title">Подвеска</p>
+                    <p class="cards__name">Dolce & Gabanna</p>
+                    <button class="cards__price">175 000 ₽</button>
+                </div>
+
+                <div class="catalog__cards--item">
+                    <div class="cards__img">
+                        <img src="/img/catalog__img.png" alt="">
+                    </div>
+
+                    <p class="cards__title">Подвеска</p>
+                    <p class="cards__name">Dolce & Gabanna</p>
+                    <button class="cards__price">175 000 ₽</button>
+                </div>
+            </div>
+
+            <div class="catalog__cards">
+                <div class="catalog__cards--item">
+                    <div class="cards__img">
+                        <img src="/img/catalog__img.png" alt="">
+                    </div>
+
+                    <p class="cards__title">Подвеска</p>
+                    <p class="cards__name">Dolce & Gabanna</p>
+                    <button class="cards__price">175 000 ₽</button>
+                </div>
+
+                <div class="catalog__cards--item">
+                    <div class="cards__img">
+                        <img src="/img/catalog__img.png" alt="">
+                    </div>
+
+                    <p class="cards__title">Подвеска</p>
+                    <p class="cards__name">Dolce & Gabanna</p>
+                    <button class="cards__price">175 000 ₽</button>
+                </div>
+
+                <div class="catalog__cards--item">
+                    <div class="cards__img">
+                        <img src="/img/catalog__img.png" alt="">
+                    </div>
+
+                    <p class="cards__title">Подвеска</p>
+                    <p class="cards__name">Dolce & Gabanna</p>
+                    <button class="cards__price">175 000 ₽</button>
+                </div>
+            </div>
+
+            <div class="catalog__cards hidden">
+                <div class="catalog__cards--item">
+                    <div class="cards__img">
+                        <img src="/img/catalog__img.png" alt="">
+                    </div>
+
+                    <p class="cards__title">Подвеска</p>
+                    <p class="cards__name">Dolce & Gabanna</p>
+                    <button class="cards__price">175 000 ₽</button>
+                </div>
+
+                <div class="catalog__cards--item">
+                    <div class="cards__img">
+                        <img src="/img/catalog__img.png" alt="">
+                    </div>
+
+                    <p class="cards__title">Подвеска</p>
+                    <p class="cards__name">Dolce & Gabanna</p>
+                    <button class="cards__price">175 000 ₽</button>
+                </div>
+
+                <div class="catalog__cards--item">
+                    <div class="cards__img">
+                        <img src="/img/catalog__img.png" alt="">
+                    </div>
+
+                    <p class="cards__title">Подвеска</p>
+                    <p class="cards__name">Dolce & Gabanna</p>
+                    <button class="cards__price">175 000 ₽</button>
+                </div>
+            </div>
+
+            <div class="catalog__show-more">
+                покажите еще
+            </div>
+            
+           
         </div>
     </section>
 

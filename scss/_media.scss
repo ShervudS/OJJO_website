@@ -31,9 +31,16 @@
     }
 }
 
+
 @media(max-width: 763px){
     .footer__item{
         margin: 1em .5em 0 0;
+    }
+}
+
+@media(max-width: 729px){
+    .catalog__cards{
+        justify-content: center;
     }
 }
 
@@ -68,5 +75,10 @@
 }
 
 @media(max-width: 320px) {
-
+    .header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
 }
